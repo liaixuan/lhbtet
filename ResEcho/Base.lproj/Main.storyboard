@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Default.png" translatesAutoresizingMaskIntoConstraints="NO" id="sTS-Z3-CjE">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nek-Wh-ke3">
+                                <rect key="frame" x="56" y="483" width="263" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="开始游戏">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startGameButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oog-hO-T49"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="sTS-Z3-CjE" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="0Py-P5-1es"/>
+                            <constraint firstItem="sTS-Z3-CjE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="8r4-ff-bMu"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="sTS-Z3-CjE" secondAttribute="trailing" constant="-16" id="9RY-va-WZN"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="sTS-Z3-CjE" secondAttribute="bottom" id="dJf-ef-ieI"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="rnv-z1-M6g">
+            <objects>
+                <viewController id="QCR-m6-st8" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XAB-gd-xj2"/>
+                        <viewControllerLayoutGuide type="bottom" id="5mp-hI-glH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8hq-cO-k5D">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GameBG01.png" translatesAutoresizingMaskIntoConstraints="NO" id="szn-r7-ihH">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="320"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GameBG02.png" translatesAutoresizingMaskIntoConstraints="NO" id="FPb-bf-z0X">
+                                <rect key="frame" x="0.0" y="273" width="375" height="174"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GameBG03.png" translatesAutoresizingMaskIntoConstraints="NO" id="xHZ-TI-kQS">
+                                <rect key="frame" x="0.0" y="399" width="375" height="167"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GameBG04.png" translatesAutoresizingMaskIntoConstraints="NO" id="RGY-xl-yH9">
+                                <rect key="frame" x="0.0" y="524" width="375" height="143"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Mole01.png" translatesAutoresizingMaskIntoConstraints="NO" id="Owr-k0-8ei">
+                                <rect key="frame" x="38" y="294" width="59" height="79"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Mole01.png" translatesAutoresizingMaskIntoConstraints="NO" id="V16-0z-5qu">
+                                <rect key="frame" x="38" y="290" width="59" height="79"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Mole01.png" translatesAutoresizingMaskIntoConstraints="NO" id="XnG-bZ-g8C">
+                                <rect key="frame" x="38" y="538" width="59" height="79"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Mole01.png" translatesAutoresizingMaskIntoConstraints="NO" id="0KY-dG-vY9">
+                                <rect key="frame" x="38" y="417" width="59" height="79"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="08t-l4-o3O" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="908.5" y="443.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Default.png" width="320" height="480"/>
+        <image name="GameBG01.png" width="320" height="227"/>
+        <image name="GameBG02.png" width="320" height="124"/>
+        <image name="GameBG03.png" width="320" height="123"/>
+        <image name="GameBG04.png" width="320" height="116"/>
+        <image name="Mole01.png" width="56" height="79"/>
+    </resources>
+</document>
